@@ -1,0 +1,97 @@
+html,
+body {
+    max-width: 100%;
+    height: 400px;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding: 3px;
+}
+
+div.stick {
+    position: sticky;
+    top: 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    overflow: hidden;
+}
+
+h3 {
+    background-color: #f3b48a;
+}
+
+div {
+    text-align: justify;
+    max-height: 300px;
+    padding-right: 8px;
+}
+
+button.smileysemoji,
+button.foodemoji,
+button.animalsemoji,
+button.travelemoji,
+button.activitiesemoji,
+button.objectsemoji,
+button.symbolsemoji,
+button.flagsemoji {
+    background: none;
+    border: none;
+    font-size: 200%;
+    font-family: segoe ui emoji;
+}
+
+button.em {
+    background: none;
+    border: none;
+    font-size: 170%;
+    font-family: segoe ui emoji;
+}
+
+button.em:hover {
+    background: rgba(196, 196, 196, 0.726);
+    border: rgba(196, 196, 196, 0.726);
+    font-size: 170%
+}
+
+button.emoji:hover {
+    background: rgb(223, 223, 223);
+    border: rgb(223, 223, 223);
+    font-size: 200%
+}
+
+#smileys,
+#animals,
+#food,
+#nature,
+#activities,
+#things,
+#symbols,
+#flags {
+    float: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(233, 233, 233, 0.925);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
