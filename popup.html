@@ -1,88 +1,49 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        h3 {
-            background-color: #f3b48a;
-        }
-        
-        div {
-            word-wrap: wrap break-word;
-        }
-        
-        button.emoji {
-            background: none;
-            border: none;
-            font-size: 200%
-        }
-        
-        button.emoji:hover {
-            background: rgb(223, 223, 223);
-            border: rgb(223, 223, 223);
-            font-size: 200%
-        }
-        
-        body {
-            min-width: 400px;
-            /* your desired width */
-            max-width: 100%;
-            position: relative;
-            vertical-align: middle;
-        }
-    </style>
+    <link rel="stylesheet" href="popup.css">
+    <meta charset="utf-8">
 </head>
-
 <body>
-
+    <div class="stick">
+        <textarea rows="1" cols="5" id="text"></textarea>
+    </div>
     <div>
-        <h3>Smilies & People</h3>
-        <div id="smilies">
-            <button id="1" class="emoji">&#x1f600;</button>
-            <button id="2" class="emoji">&#x1f601;</button>
-            <button id="3" class="emoji">&#x1f602;</button>
-            <button id="4" class="emoji">&#x1f923;</button>
-            <button id="5" class="emoji">&#x1f603;</button>
-            <button id="6" class="emoji">&#x1f604;</button>
-            <button id="7" class="emoji">&#x1f605;</button>
-            <button id="8" class="emoji">&#x1f606;</button>
-            <button id="9" class="emoji">&#x1f609;</button>
-            <button id="10" class="emoji">&#x1f60A;</button>
-            <button id="11" class="emoji">&#x1f60B;</button>
-            <button id="12" class="emoji">&#x1f60E;</button>
-            <button id="13" class="emoji">&#x1f60D;</button>
-            <button id="14" class="emoji">&#x1f618;</button>
-            <!--<button id="15" class="emoji">&#x1f970;</button>-->
-            <button id="16" class="emoji">&#x1f617;</button>
-            <button id="17" class="emoji">&#x1f619;</button>
-            <button id="18" class="emoji">&#x1f61A;</button>
-            <button id="19" class="emoji">&#x1f60A;</button>
-            <button id="20" class="emoji">&#x1f642;</button>
-            <button id="21" class="emoji">&#x1f917;</button>
-            <button id="22" class="emoji">&#x1f929;</button>
-            <button id="23" class="emoji">&#x1f914;</button>
-            <button id="24" class="emoji">&#x1f928;</button>
-            <button id="25" class="emoji">&#x1f610;</button>
-            <button id="26" class="emoji">&#x1f611;</button>
-            <button id="27" class="emoji">&#x1f636;</button>
-            <button id="28" class="emoji">&#x1f644;</button>
-            <button id="29" class="emoji">&#x1f60F;</button>
-            <button id="30" class="emoji">&#x1f623;</button>
-            <button id="31" class="emoji">&#x1f625;</button>
-            <button id="32" class="emoji">&#x1f62E;</button>
-            <button id="33" class="emoji">&#x1f910;</button>
-            <button id="34" class="emoji">&#x1f623;</button>
-
-            <button id="" class="emoji">&#x1f607;</button>
-            <button id="" class="emoji">&#x1f608;</button>
-
-
-
+        <h3 class="head" id="smileyshead" hidden>Smileys & People</h3>
+        <div id="smileysdiv" class="grid-container" display="none">
         </div>
-        <div>
-            <textarea rows="1" cols="1" id="text"></textarea>
+        <h3 class="head" id="animalshead" hidden>Animals & Nature</h3>
+        <div id="animalsdiv" class="grid-container" display="none">
         </div>
-        <script src="popup.js"></script>
+        <h3 class="head" id="foodhead" hidden>Food & Drink</h3>
+        <div id="fooddiv" class="grid-container" display="none">
+        </div>
+        <h3 class="head" id="travelhead" hidden>Travel & Places</h3>
+        <div id="traveldiv" class="grid-container" display="none">
+        </div>
+        <h3 class="head" id="activitieshead" hidden>Activities</h3>
+        <div id="activitiesdiv" class="grid-container" display="none">
+        </div>
+        <h3 class="head" id="objectshead" hidden>Objects</h3>
+        <div id="objectsdiv" class="grid-container" display="none">
+        </div>
+        <h3 class="head" id="symbolshead" hidden>Symbols</h3>
+        <div id="symbolsdiv" class="grid-container" display="none">
+        </div>
+        <h3 class="head" id="flagshead" hidden>Flags</h3>
+        <div id="flagsdiv" class="grid-container" display="none">
+        </div>
+    </div>
+    <div class="footer">
+        <button class="em" id="smileys">😀</button>
+        <button class="em" id="animals">🐶</button>
+        <button class="em" id="food">🍔</button>
+        <button class="em" id="travel">🌍</button>
+        <button class="em" id="activities">🏀</button>
+        <button class="em" id="objects">⚙️</button>
+        <button class="em" id="symbols">🔤</button>
+        <button class="em" id="flags">🏁</button>
+    </div>
+    <script src="popup.js"></script>
 </body>
-
 </html>
