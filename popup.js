@@ -8140,7 +8140,6 @@ function animalss() {
 }
 
 function foods() {
-
     len = food.length;
     while (mmm < len) {
         var btn = document.createElement("BUTTON");
