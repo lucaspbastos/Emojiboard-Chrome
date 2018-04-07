@@ -1,11 +1,11 @@
 {
-    "name": "Emojiboard",
-    "version": "0.5",
+    "name": "Emojiboard: Emoji Keyboard",
+    "version": "0.1.1",
     "description": "Quick emoji selection.",
-    "permissions": ["declarativeContent", "storage"],
+    "permissions": ["clipboardWrite"],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "Emoji 😀",
+        "default_title": "Emojiboard",
         "default_icon": {
             "16": "images/image16.png",
             "32": "images/image32.png",
