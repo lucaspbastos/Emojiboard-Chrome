@@ -6,43 +6,38 @@
 </head>
 <body>
     <div class="stick">
-        <textarea rows="1" cols="5" id="text"></textarea>
+        <textarea rows="1" cols="5" id="textArea"></textarea>
     </div>
-    <div>
-        <h3 class="head" id="smileyshead" hidden>Smileys & People</h3>
-        <div id="smileysdiv" class="grid-container" display="none">
+    <div id="all">
+        <h3 id="head"><button id="settings"">⚙️</button></h3>
+        <div id="settingspage" style="text-align:center; display:none">
+            <h4>Skin tone</h4>
+            <button class="tone" id="0">🏻</button>
+            <button class="tone" id="1">🏼</button>
+            <button class="tone" id="2">🏽</button>
+            <button class="tone" id="3">🏾</button>
+            <button class="tone" id="4">🏿</button>
+            <button class="tone" id="5">All</button>
+            <hr>
         </div>
-        <h3 class="head" id="animalshead" hidden>Animals & Nature</h3>
-        <div id="animalsdiv" class="grid-container" display="none">
-        </div>
-        <h3 class="head" id="foodhead" hidden>Food & Drink</h3>
-        <div id="fooddiv" class="grid-container" display="none">
-        </div>
-        <h3 class="head" id="travelhead" hidden>Travel & Places</h3>
-        <div id="traveldiv" class="grid-container" display="none">
-        </div>
-        <h3 class="head" id="activitieshead" hidden>Activities</h3>
-        <div id="activitiesdiv" class="grid-container" display="none">
-        </div>
-        <h3 class="head" id="objectshead" hidden>Objects</h3>
-        <div id="objectsdiv" class="grid-container" display="none">
-        </div>
-        <h3 class="head" id="symbolshead" hidden>Symbols</h3>
-        <div id="symbolsdiv" class="grid-container" display="none">
-        </div>
-        <h3 class="head" id="flagshead" hidden>Flags</h3>
-        <div id="flagsdiv" class="grid-container" display="none">
-        </div>
+        <div id="smileys-div" class="grid-container"></div>
+        <div id="nature-div" class="grid-container"></div>
+        <div id="food-div" class="grid-container"></div>
+        <div id="places-div" class="grid-container"></div>
+        <div id="activities-div" class="grid-container"></div>
+        <div id="objects-div" class="grid-container"></div>
+        <div id="symbols-div" class="grid-container"></div>
+        <div id="flags-div" class="grid-container"></div>
     </div>
     <div class="footer">
-        <button class="em" id="smileys">😀</button>
-        <button class="em" id="animals">🐶</button>
-        <button class="em" id="food">🍔</button>
-        <button class="em" id="travel">🌍</button>
-        <button class="em" id="activities">🏀</button>
-        <button class="em" id="objects">⚙️</button>
-        <button class="em" id="symbols">🔤</button>
-        <button class="em" id="flags">🏁</button>
+        <button class="select" id="smileys">😀</button>
+        <button class="select" id="nature">🐶</button>
+        <button class="select" id="food">🍔</button>
+        <button class="select" id="activities">🏀</button>
+        <button class="select" id="places">🌍</button>
+        <button class="select" id="objects">⚙️</button>
+        <button class="select" id="symbols">🔤</button>
+        <button class="select" id="flags">🏁</button>
     </div>
     <script src="popup.js"></script>
 </body>
