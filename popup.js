@@ -34,7 +34,6 @@ var check = false;
 var lastCategory;
 function filter(keepTone, category) {
     if (category != smileys && category != activities) {
-        console.log("not smiley or activity");
         return 0;
     }
     for (var i = 0; i < tones.length; i++) {
@@ -74,7 +73,6 @@ function fillPage(category = smileys) {
         elementsMap.get(category)[2] = true;
     }
     lastCategory = category;
-    console.log(cache);
     filter(cache, category);
 }
 function getKey(val) {
