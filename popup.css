@@ -1,23 +1,21 @@
 html,
 body {
-    max-width: 100%;
-    height: 400px;
-    overflow: auto;
+    width: 400px;
+    height: 450px;
     position: relative;
+    overflow:auto;
     margin-bottom: 45px;
+    margin-right: 8px;
 }
-
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    padding: 3px;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 div.stick {
     position: sticky;
     top: 0;
 }
-
 textarea {
     width: 100%;
     padding: 12px 20px;
@@ -28,39 +26,51 @@ textarea {
     resize: none;
     overflow: hidden;
 }
-
 h3 {
     background-color: #f3b48a;
+    font-family: roboto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
 }
-
+h4 {
+    font-family: roboto;
+    text-align: center;
+}
 div {
-    text-align: justify;
     max-height: 300px;
     padding-right: 8px;
 }
-
-button.smileysemoji,
-button.foodemoji,
-button.animalsemoji,
-button.travelemoji,
-button.activitiesemoji,
-button.objectsemoji,
-button.symbolsemoji,
-button.flagsemoji {
+button.smileys-button,
+button.food-button,
+button.nature-button,
+button.places-button,
+button.activities-button,
+button.objects-button,
+button.symbols-button,
+button.flags-button {
     background: none;
     border: none;
     font-size: 200%;
     font-family: segoe ui emoji;
 }
-
-button.em {
+#settings {
+    float: right;
+    background-color: #f5c5a5;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+button.select,
+button.tone {
     background: none;
     border: none;
     font-size: 170%;
     font-family: segoe ui emoji;
 }
 
-button.em:hover {
+button.select:hover,
+button.tone:hover {
     background: rgba(196, 196, 196, 0.726);
     border: rgba(196, 196, 196, 0.726);
     font-size: 170%
@@ -77,7 +87,8 @@ button.emoji:hover {
 #food,
 #nature,
 #activities,
-#things,
+#objects,
+#places,
 #symbols,
 #flags {
     float: center;
