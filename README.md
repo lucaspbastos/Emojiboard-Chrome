@@ -1,3 +1,3 @@
 # emojiboard
 Emoji Google Chrome extension.
-(./marquee1400.png)
+![Emojiboard](/marquee1400.png?raw=true "Emojiboard")
