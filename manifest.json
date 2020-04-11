@@ -1,8 +1,8 @@
 {
     "name": "Emojiboard: Emoji Keyboard",
-    "version": "0.1.1",
+    "version": "1.1.0",
     "description": "Quick emoji selection.",
-    "permissions": ["clipboardWrite"],
+    "permissions": ["clipboardWrite", "storage"],
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "Emojiboard",
