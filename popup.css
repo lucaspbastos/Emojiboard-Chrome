@@ -1,5 +1,4 @@
-html,
-body {
+html,body {
     width: 400px;
     height: 450px;
     position: relative;
@@ -41,14 +40,8 @@ div {
     max-height: 300px;
     padding-right: 8px;
 }
-button.smileys-button,
-button.food-button,
-button.nature-button,
-button.places-button,
-button.activities-button,
-button.objects-button,
-button.symbols-button,
-button.flags-button {
+button.smileys-button, button.food-button, button.nature-button, button.places-button,
+button.activities-button, button.objects-button, button.symbols-button, button.flags-button {
     background: none;
     border: none;
     font-size: 200%;
@@ -61,39 +54,27 @@ button.flags-button {
     border-radius: 5px;
     border: 1px solid black;
 }
-button.select,
-button.tone {
+button.select, button.tone {
     background: none;
     border: none;
     font-size: 170%;
     font-family: segoe ui emoji;
 }
 
-button.select:hover,
-button.tone:hover {
+button.select:hover, button.tone:hover {
     background: rgba(196, 196, 196, 0.726);
     border: rgba(196, 196, 196, 0.726);
     font-size: 170%
 }
-
 button.emoji:hover {
     background: rgb(223, 223, 223);
     border: rgb(223, 223, 223);
     font-size: 200%
 }
-
-#smileys,
-#animals,
-#food,
-#nature,
-#activities,
-#objects,
-#places,
-#symbols,
-#flags {
+#smileys, #animals, #food, #nature, 
+#activities, #objects, #symbols, #flags {
     float: center;
 }
-
 .footer {
     position: fixed;
     left: 0;
